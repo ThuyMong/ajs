@@ -20,20 +20,25 @@
     var app = angular.module("app", []);
     app.controller("HttpGetController", function ($scope, $http) {
 
+        $scope.sName = "Thanh Viet";
+        $scope.sPhone = "1234";
+        $scope.sCity ="Saigon";
+        
         $scope.SendData = function () {
            // use $.param jQuery function to serialize data from JSON 
-           /* var data = $.param({
+             var data = $.param({
                 Name: $scope.sName,
                 Phone: $scope.sPhone,
                 City: $scope.sCity
             });
-        */
+        
+        /*
             var data1 ={
             "Name": "Nguyen Thanh Viet",
             "Phone": "911",
             "City": "Saigon"
             };
-
+        */
         /*    var url ="post.txt";
             $http.post(url, data1).then(function (response) {
                 $scope.PostDataResponse = data1;
