@@ -35,13 +35,13 @@
                 City: $scope.sCity
             });
             */
-        
+ /*       
             var data = {
                 Name: $scope.sName,
                 Phone: $scope.sPhone,
                 City: $scope.sCity
             };
-        
+ */       
         /*    var url ="post.txt";
             $http.post(url, data1).then(function (response) {
                 $scope.PostDataResponse = data1;
@@ -50,6 +50,7 @@
             });
         */    
             
+ /*
             var config = {
                 headers : {
                     'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
@@ -68,8 +69,19 @@
                     "<hr />config: " + config;
             });
 
-            
+*/            
 
+            var data = $.param({
+                json: JSON.stringify({
+                    Name: $scope.sName,
+                    Phone: $scope.sPhone,
+                    City: $scope.sCity
+                })
+            });
+
+            $http.post("post.txt", data).success(function(data, status) {
+                $scope.PostDataResponse = data;
+            })
 
 
 
