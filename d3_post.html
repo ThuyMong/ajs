@@ -23,7 +23,7 @@
         $scope.sName = "Thanh Viet";
         $scope.sPhone = "1234";
         $scope.sCity ="Saigon";
-        
+
         $scope.SendData = function () {
            // use $.param jQuery function to serialize data from JSON 
              var data = $.param({
@@ -54,7 +54,7 @@
             }
             
 
-            $http.post('post.txt', data1, config)
+            $http.post('post.txt', data, config)
             .success(function (data, status, headers, config) {
                 $scope.PostDataResponse = data;
             })
