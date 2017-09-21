@@ -2,8 +2,10 @@
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
 <body>
-
+<h2>Post Demo</h2>
+<hr/>
 <div ng-app="app" ng-controller="HttpGetController">
+
     <p>Name: <input type="text" name="txtNname" ng-model="sName" required /></p>
     <p>Phone: <input type="text" name="txtPhone" ng-model="sPhone" required /></p>
     <p>City: <input type="text" name="txtCity" ng-model="sCity" required /></p>
@@ -22,7 +24,7 @@
 
         $scope.sName = "Ngo Thanh Viet";
         $scope.sPhone = "1234";
-        $scope.sCity ="Saigon";
+        $scope.sCity ="Saigon City";
 
         $scope.SendData = function () {
            // use $.param jQuery function to serialize data from JSON 
