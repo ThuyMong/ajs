@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Animate 4</title>
+	<link rel="stylesheet" href="">
+	<script src="../js/angular.min.js"></script>
+	<script src="../js/angular-animate.js"></script>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>-->
+
+	<style type="text/css">
+		.css-class-add, .css-class-remove {
+  			transition: all 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+		}
+
+		.css-class,.css-class-add.css-class-add-active {
+		  color: red;
+		  font-size: 4em;
+		}
+
+		.css-class-remove.css-class-remove-active {
+		  font-size: 1em;
+		  color: black;
+		}
+	</style>
+</head>
+<body ng-app="app">
+	<h2>Animate demo</h2>
+	<hr/>
+	<p>
+	  <button ng-click="mycss='css-class'">Set</button>
+	  <button ng-click="mycss=''">Clear</button>
+	  <br>
+	  <span ng-class="mycss">CSS-Animated Text</span>
+	</p>
+</body>
+</html>
+<script type="text/javascript">
+	var a = angular.module('app', ['ngAnimate']);
+</script>

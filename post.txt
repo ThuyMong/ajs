@@ -1,0 +1,4 @@
+{ "records":[ 
+{"Name":"Nguyen Thanh Son","Phone":"911","City":"Saigon"}, 
+{"Name":"Tran Bao Ngoc","Phone":"113","City":"Hue"}, 
+{"Name":"Nguyen Thien Chi","Phone":"1080","City":"Can Tho"} ] }
